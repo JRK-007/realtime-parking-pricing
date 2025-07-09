@@ -82,7 +82,7 @@ We used:
 
 ## 🏗️ Project Architecture & Workflow
 
-```mermaid
+
 flowchart TD
     A[Raw Parking Data (CSV)] -->|Loaded in Pathway| B[Real-Time Data Streams]
     B --> C[Feature Engineering]
