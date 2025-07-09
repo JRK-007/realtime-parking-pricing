@@ -47,4 +47,15 @@ This project builds a **dynamic, data-driven pricing engine** to adjust parking 
 | **7. Bokeh Live Plots** | Visualized prices, occupancy, and competitor trends in real-time dashboards. |
 
 
-](https://github.com/JRK-007/realtime-parking-pricing)
+.
+├── DynamicPricing_Colab.ipynb   # Main Google Colab notebook
+├── dataset.csv                  # Parking time-series data
+├── visuals/                     # Bokeh HTML exports or screenshots
+├── pricing_report.pdf           # (Optional) Detailed assumptions & plots
+└── README.md                    # This documentation
+
+
+📬 **Connect with me:**  
+[LinkedIn](https://linkedin.com/in/rahulkrishna-j) | [GitHub](https://github.com/JRK-007)
+
+---
