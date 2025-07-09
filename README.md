@@ -36,18 +36,15 @@ This project builds a **dynamic, data-driven pricing engine** to adjust parking 
 
 ## 🏗️ System Architecture & Workflow
 
-```mermaid
-flowchart TD
-    A[Raw Parking Data (CSV)\n(14 lots × 73 days)] -->|Load in Pathway| B[Real-Time Data Streams]
-    B --> C[Feature Engineering]
-    C --> D[Pricing Engine]
-    D --> E[Baseline Model]
-    D --> F[Demand Model]
-    D --> G[Competitive Model]
-    E --> H[Price Predictions]
-    F --> H
-    G --> H
-    H --> I[Pathway Emits Predictions]
-    I --> J[Bokeh Live Plots]
+| Step | Description |
+|------|-------------|
+| **1. Raw Data CSV** | Historical data of 14 parking lots over 73 days, sampled every 30 min. |
+| **2. Pathway Ingestion** | Loaded CSV into Pathway, streamed row by row in time order. |
+| **3. Feature Engineering** | Calculated occupancy rates, normalized queue, traffic flags, vehicle weights, competitor proximity. |
+| **4. Pricing Engine** | Ran through 3 models:<br>• Baseline linear<br>• Demand-based<br>• Competitive pricing |
+| **5. Pricing Predictions** | Produced real-time price adjustments based on current lot state and market. |
+| **6. Pathway Emits** | Pathway continuously emitted new prices as data streamed. |
+| **7. Bokeh Live Plots** | Visualized prices, occupancy, and competitor trends in real-time dashboards. |
+
 
 ](https://github.com/JRK-007/realtime-parking-pricing)
