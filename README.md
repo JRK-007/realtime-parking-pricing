@@ -83,6 +83,8 @@ We used:
 ## 🏗️ Project Architecture & Workflow
 
 
+
+```mermaid
 flowchart TD
     A[Raw Parking Data (CSV)] -->|Loaded in Pathway| B[Real-Time Data Streams]
     B --> C[Feature Engineering]
@@ -95,8 +97,6 @@ flowchart TD
     G --> H
     H --> I[Pathway Stream Emit]
     I --> J[Bokeh Real-Time Plots]
-
----
 
 📬 **Connect with me:**  
 [LinkedIn](https://linkedin.com/in/rahulkrishna-j) | [GitHub](https://github.com/JRK-007)
