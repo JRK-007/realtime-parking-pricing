@@ -1,4 +1,4 @@
-# 🚗 Dynamic Pricing for Urban Parking Lots
+[# 🚗 Dynamic Pricing for Urban Parking Lots
 
 > 📊 **Capstone Project | Summer Analytics 2025**  
 > Hosted by Consulting & Analytics Club × Pathway
@@ -49,3 +49,4 @@ flowchart TD
     G --> H
     H --> I[Pathway Stream Emit]
     I --> J[Bokeh Real-Time Plots]
+](https://github.com/JRK-007/realtime-parking-pricing)
