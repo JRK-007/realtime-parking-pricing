@@ -34,19 +34,20 @@ This project builds a **dynamic, data-driven pricing engine** to adjust parking 
 
 ---
 
-## 🏗️ Project Architecture & Workflow
+## 🏗️ System Architecture & Workflow
 
 ```mermaid
 flowchart TD
-    A[Raw Parking Data (CSV)] -->|Loaded in Pathway| B[Real-Time Data Streams]
+    A[Raw Parking Data (CSV)\n(14 lots × 73 days)] -->|Load in Pathway| B[Real-Time Data Streams]
     B --> C[Feature Engineering]
-    C --> D[Pricing Models]
+    C --> D[Pricing Engine]
     D --> E[Baseline Model]
     D --> F[Demand Model]
     D --> G[Competitive Model]
     E --> H[Price Predictions]
     F --> H
     G --> H
-    H --> I[Pathway Stream Emit]
-    I --> J[Bokeh Real-Time Plots]
+    H --> I[Pathway Emits Predictions]
+    I --> J[Bokeh Live Plots]
+
 ](https://github.com/JRK-007/realtime-parking-pricing)
